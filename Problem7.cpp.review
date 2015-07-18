@@ -1,0 +1,26 @@
+1. After bitlab, you can write this code:
+
+            if(x < 0)
+            {
+                sign  = -1;
+            }
+            else
+            {
+                sign  = 1;
+            }
+   as:
+      sign = (x>>31);
+
+   never give up a small peach of chance to make your code better. 
+
+
+   PRINCIPLE:
+   (1) implement it first (mark the places that you plan to improve later)
+   (2) improve it when it works 
+
+
+2. temp = x * sign;
+   This is a smart way to eliminate branches.
+   If you did this you can do what REVIEW 1. said.
+
+

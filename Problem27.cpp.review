@@ -1,0 +1,37 @@
+1. Here you used "pos" and earse idx from nums.
+
+That is okay solution, but it is slow to erase number in an array. Because array is stored sequentially!
+for example:
+
+from 
+
+1 2 3 4 5 6 7 8 
+
+to 
+
+1 2 4 5 6 7 8 
+
+you earse "3", this won't be easy for computer. because after earsing, the address of "4" need to next to "2"'s.
+
+Think about a solution how to avoiding "pos" and erasing. and also using two "for" loop. Read the following code if you can't get any idea in ten minutes.
+
+
+
+
+
+Read the following code:
+
+class Solution {
+public:
+    int removeDuplicates(int A[], int n) {
+        if(!n) return 0;
+        
+        int res = 1, idx;
+        for(idx = 1; idx < n;idx++) {
+            if(A[idx] != A[idx-1]) {
+                A[res++] = A[idx];
+            }
+        }
+        return res;
+    }
+};

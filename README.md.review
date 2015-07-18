@@ -1,0 +1,28 @@
+For each solution, Problemx.cpp.
+I will write review using a name Problemx.cpp.review
+
+If you need to revise your code for a little bit, just overwrite Problemx.cpp.
+
+However, if you need to rewrite it using a better algorithm, write a new file Problemx.1.cpp. (Problemx.2.cpp if you need to rewrite it again)
+
+My review for it will be Problemx.1.cpp.review. 
+
+To avoid you reading same review again, When you finish reading a review. Move it from unread list to read list:
+
+
+####### Unread list
+I haven't read these reviews(sorted using the problem id):
+
+Problem7.cpp.review
+Problem9.cpp.review
+Problem20.cpp.review
+Problem26.cpp.review
+Problem27.cpp.review
+Problem191.cpp.review
+Problem202.cpp.review
+
+
+####### Read list
+I already read these reviews(sorted using the problem id):
+
+Problemx.cpp.review

@@ -1,0 +1,34 @@
+
+1. IMPORTANT: your stack has only 20 slots, and since you will never use str[0], you can only push 19 values in it.
+
+so it is better to assign top as -1.
+
+On the other hand, when top ==19, you print out "Stack Full". 
+This is not a good solution for algorithm exercises.
+
+If there is a test case with 20 "(" ,then 20 ")".
+you will output "Stack Full" and get a wrong answer..
+
+So It is better to use stack std libarary. 
+
+It is good to implement stack by yourself. But in real world. when it excess the range, it is better to fix it(allocate larger space) rather than giving an error.
+
+This error makes your solution as :
+a wrong solution that pass the test cases.
+
+2. 
+
+else if( s[i]==']' || s[i] == ')' || s[i] == '}' )
+
+(1). when you meet right brackets, why do you push it into stack?
+(2). In this test case:
+
+     )))
+
+when the first ")" comes, what does str[top-1] means?
+
+You need to check if the stack is full!
+
+Here str[top-1] will be str[0] which is initialized randomly. You pass the test case because it is hard to meet the situation that str[0] is initialized as '('. But what if it happens 1 in 1000 cases? 
+
+So even if it passed the test, you still have a bug here.

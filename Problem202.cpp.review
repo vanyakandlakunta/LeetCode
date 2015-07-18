@@ -1,0 +1,23 @@
+1. Comment "do nothing" 
+2. 
+                divfactor = pow(10,(count-1));
+you generate divfactor every time using a function call. 
+How about predefine an array 
+int fact[] = {1, 10, 100, 1000, 10000, 100000, ...}
+
+even if you want to do it live time, you can do:
+divfactor *= 10;
+
+3.
+Why do you need to CountDidits before you "SumOfDigits"
+
+Compare your SumOfDigits with the code below:
+
+int res = 0;
+while(n) {
+    res += (n%10) * (n%10);
+    n /= 10;
+}
+
+
+Keep your code simple, keep your code fast.
