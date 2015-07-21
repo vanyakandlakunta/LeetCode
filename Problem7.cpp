@@ -23,16 +23,17 @@ class Solution {
             int sign = 0, temp;
 
             temp = x;
-
-            if(x < 0)
+            //if we want branching we can also do :
+           /* if(x < 0)
             {
                 sign  = -1;
             }
             else
             {
                 sign  = 1;
-            }
+            }*/
 
+            sign = 1-((x>>31)&2)
             temp = x * sign;
 
             reversed = Reversed(temp);
